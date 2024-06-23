@@ -1,0 +1,681 @@
+
+ html{
+
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+
+}
+:root{
+      --bg-padrao:#E7E7E7;  
+      --laranja-padrao:#C37B32;
+      --bege-padrao:#986E0A;
+      --cinza-padrao:#272B2C;
+}
+
+/* MOBILE */
+.nav-desktop{
+    display: none;
+}
+
+.area-burguer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.356);
+}
+
+.burguer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1%;
+    height: max-content;
+    cursor: pointer;
+}
+.barra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--cinza-padrao);
+    width: 10vw;
+    height: 2vw;
+    margin: .1vw;
+}
+.nav-mobile li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nav-mobile a{
+    text-decoration: none;
+    padding: 2%;
+    color: var(--cinza-padrao);
+    transition: all .5s ease;
+}
+.nav-mobile a:hover {
+
+    color: #818c8f;
+
+}
+
+                /* TOPO */
+
+.topo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/src//bg/fundo-topo.png);
+    background-size: cover;
+    background-position: top;
+    
+}
+.caixa-topo{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10vh;
+    
+}
+.caixa-topo h2{
+color: var(--laranja-padrao);
+font-weight:bolder;
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.637);
+width: 90%;
+font-size: 6vw;
+text-align: center;
+
+
+}
+.caixa-topo p{
+    color: var(--cinza-padrao);
+    width: 90%;
+    font-size: 3vw;
+    padding-bottom: 2vh;
+}
+
+.btn{
+    border: 1px solid #272B2C;
+    border-radius: 2px;
+    padding: 2vw;
+    text-decoration: none;
+    color: var(--cinza-padrao);
+    text-transform: uppercase;
+    font-size: 3vw;
+    font-weight: 500;
+    transition: all .2s ease-in-out;
+}
+.btn-top{
+    /* border: 1px solid #272B2C; */
+    border-radius: 2px;
+    padding: 2vw;
+    text-decoration: none;
+    color: transparent;
+    text-transform: uppercase;
+    font-size: 3vw;
+    font-weight: 500;
+    transition: all .2s ease-in-out;
+    margin-right: 50%;
+}
+
+.btn:hover{
+    border: 1px solid #272B2C;
+    background-color: var(--cinza-padrao);    
+    color: white;
+
+}
+                /*SERVICOS*/
+.servicos{
+    background-color: var(--bg-padrao);
+    padding-bottom: 10vw;
+}
+
+.caixa-servicos{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.caixa-icon{
+    display: flex;
+    width: 80%;
+    
+}
+.caixa-icon img{
+    width: 15vw;
+}
+
+.caixa-servicos h2{
+    
+    font-size: 6vw;
+    color: var(--cinza-padrao);
+    width: 80%;
+    font-weight: 600;
+}
+
+.caixa-servicos p{
+
+    font-size: 3vw;
+    color: var(--cinza-padrao);
+    width: 80%;
+}
+
+            /*OQUE FAZEMOS*/   
+.oque-fazemos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/src/img/construcao.jpg);
+    background-size: auto;
+    height: auto;
+    padding-bottom: 10vh;
+}
+
+.oque-fazemos h2{
+    padding: 0;
+    color: white;
+    text-align: center;
+
+}
+.oque-fazemos p{
+   
+    padding: 0;
+    font-weight: 200;
+    color: white;
+    font-size: 3vw;
+}
+.caixa-oque-fazemos{
+    
+    width: 70vw;
+    height: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid ;
+    margin: 2vw;
+    background-color:white;
+    border-color: transparent;
+}
+
+.caixa-oque-fazemos img{
+
+    width: 50vw;
+    height: 50vw;
+    overflow: hidden;
+    background-size: cover;
+    border-radius: 120px;
+}
+.caixa-oque-fazemos h2{
+
+    font-weight: 300;
+    color: var(--cinza-padrao);
+}
+
+            /* CONTRATACAO*/
+.contratacao{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 10vh;
+}
+.contratacao h2{
+    width: 100%;
+    color: var(--cinza-padrao);
+    text-align: center;
+    font-weight: 800;
+}
+.contratacao p {
+    text-align: center;
+    color: var(--cinza-padrao);
+    font-weight: 400;
+    font-size: 3vw;
+    
+}
+
+            /*CAIXA TRABALHOS*/
+.trabalhos{
+    background-image: linear-gradient(to bottom, transparent, transparent 80%, #272B2C 50%, #272B2C);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+
+}
+.caixa-trabalhos{
+    background-color: var(--laranja-padrao);
+    width: 70%;
+    padding-bottom: 10vh;
+    
+}   
+.caixa-trabalhos h2{
+    width: 90%;
+    color: var(--cinza-padrao);
+    padding-left:5vw;
+    width: 80%;
+    text-align: center;
+}
+.caixa-trabalhos p {
+    color: white;
+    width: 80%;
+    padding-left:5vw;
+    font-size: 3vw;
+    font-weight: 300;
+}
+
+.trabalhos-pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--cinza-padrao);
+    padding-bottom: 10vh;
+
+}
+.trabalhos-pic img{
+   width: 70%;
+   height: 50vh;
+   background-size: contain;
+}
+
+.caixa2-trabalhos{
+    background-color: white;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.caixa2-trabalhos h2{
+    text-align: center;
+    font-size: 5vw;
+
+}
+
+        /*QUEM-SOMOS*/
+.quem-somos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--cinza-padrao);
+} 
+.quem-somos h2{
+
+    color: var(--laranja-padrao);
+    font-size: 6vw;
+    display: flex;
+    text-align: left;
+    width: 80%;
+}
+.quem-somos p{
+    color: white;
+    font-size: 3vw;
+    display: flex;
+    text-align: left;
+    width: 80%;
+}
+
+footer{
+
+    background-color: var(--laranja-padrao);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer h3 {
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 300;
+    width: 90%;
+}
+.footer-abaixo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.footer-esrquerdo{
+    width: 30vw;
+
+}
+.footer-direito{
+    
+    width: 30vw;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    flex-direction: column;
+
+    
+    
+}
+.footer-direito p{
+    font-size: 3vw;
+    text-align:right;
+}
+
+/* DESKTOP */
+
+@media (min-width: 768px){
+    .nav-mobile{
+
+        display: none;
+        
+    }
+    
+    .nav-desktop{
+        display: flex;
+    }
+    
+
+    
+.topo{
+    display: flex;
+    justify-content: left;
+    align-items: first baseline ;
+    flex-direction: column;
+    background-image: url(/src//bg/fundo-topo.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+.caixa-topo{
+  
+  width: 70%;
+}
+.caixa-topo h2{
+
+    text-align: left;
+    font-size: 5vw;
+    font-weight: 800;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.329);
+}
+.caixa-topo p{
+    text-align: left;
+    font-size: 1.8vw;
+    font-weight: lighter;
+}
+
+.btn{
+    border: 1px solid #272B2C;
+    border-radius: 2px;
+    padding: 2vw;
+    text-decoration: none;
+    color: var(--cinza-padrao);
+    text-transform: uppercase;
+    font-size: 3vw;
+    font-weight: 500;
+    transition: all .2s ease-in-out;
+}
+.btn-top{
+    /* border: 1px solid #272B2C; */
+    border-radius: 2px;
+    padding: 2vw;
+    text-decoration: none;
+    color: transparent;
+    text-transform: uppercase;
+    font-size: 3vw;
+    font-weight: 500;
+    transition: all .2s ease-in-out;
+    margin-right: 50%;
+}
+
+.btn:hover{
+    border: 1px solid #272B2C;
+    background-color: var(--cinza-padrao);    
+    color: white;
+
+}
+                /*SERVICOS*/
+.servicos{
+    background-color: var(--bg-padrao);
+    padding-bottom: 10vw;
+}
+
+.caixa-servicos{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.caixa-icon{
+    display: flex;
+    width: 80%;
+    
+}
+.caixa-icon img{
+    width: 15vw;
+}
+
+.caixa-servicos h2{
+    
+    font-size: 6vw;
+    color: var(--cinza-padrao);
+    width: 80%;
+    font-weight: 600;
+}
+
+.caixa-servicos p{
+
+    font-size: 3vw;
+    color: var(--cinza-padrao);
+    width: 80%;
+}
+
+            /*OQUE FAZEMOS*/   
+.oque-fazemos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/src/img/construcao.jpg);
+    background-size: auto;
+    height: auto;
+    padding-bottom: 10vh;
+}
+
+.oque-fazemos h2{
+    padding: 0;
+    color: white;
+    text-align: center;
+
+}
+.oque-fazemos p{
+   
+    padding: 0;
+    font-weight: 200;
+    color: white;
+    font-size: 3vw;
+}
+.caixa-oque-fazemos{
+    
+    width: 70vw;
+    height: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid ;
+    margin: 2vw;
+    background-color:white;
+    border-color: transparent;
+}
+
+.caixa-oque-fazemos img{
+
+    width: 50vw;
+    height: 50vw;
+    overflow: hidden;
+    background-size: cover;
+    border-radius: 120px;
+}
+.caixa-oque-fazemos h2{
+
+    font-weight: 300;
+    color: var(--cinza-padrao);
+}
+
+            /* CONTRATACAO*/
+.contratacao{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 10vh;
+}
+.contratacao h2{
+    width: 100%;
+    color: var(--cinza-padrao);
+    text-align: center;
+    font-weight: 800;
+}
+.contratacao p {
+    text-align: center;
+    color: var(--cinza-padrao);
+    font-weight: 400;
+    font-size: 3vw;
+    
+}
+
+            /*CAIXA TRABALHOS*/
+.trabalhos{
+    background-image: linear-gradient(to bottom, transparent, transparent 80%, #272B2C 50%, #272B2C);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+
+}
+.caixa-trabalhos{
+    background-color: var(--laranja-padrao);
+    width: 70%;
+    padding-bottom: 10vh;
+    
+}   
+.caixa-trabalhos h2{
+    width: 90%;
+    color: var(--cinza-padrao);
+    padding-left:5vw;
+    width: 80%;
+    text-align: center;
+}
+.caixa-trabalhos p {
+    color: white;
+    width: 80%;
+    padding-left:5vw;
+    font-size: 3vw;
+    font-weight: 300;
+}
+
+.trabalhos-pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--cinza-padrao);
+    padding-bottom: 10vh;
+
+}
+.trabalhos-pic img{
+   width: 70%;
+   height: 50vh;
+   background-size: contain;
+}
+
+.caixa2-trabalhos{
+    background-color: white;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.caixa2-trabalhos h2{
+    text-align: center;
+    font-size: 5vw;
+
+}
+
+        /*QUEM-SOMOS*/
+.quem-somos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--cinza-padrao);
+} 
+.quem-somos h2{
+
+    color: var(--laranja-padrao);
+    font-size: 6vw;
+    display: flex;
+    text-align: left;
+    width: 80%;
+}
+.quem-somos p{
+    color: white;
+    font-size: 3vw;
+    display: flex;
+    text-align: left;
+    width: 80%;
+}
+
+footer{
+
+    background-color: var(--laranja-padrao);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer h3 {
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 300;
+    width: 90%;
+}
+.footer-abaixo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.footer-esrquerdo{
+    width: 30vw;
+
+}
+.footer-direito{
+    
+    width: 30vw;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.footer-direito p{
+    font-size: 3vw;
+    text-align:right;
+}
+    
+}
