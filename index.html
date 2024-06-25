@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 
+    
+
     <!-- ESTILO -->
     
     <link rel="stylesheet" href="estilo.css">
@@ -27,10 +29,9 @@
                     CGA Construtora
                 </li>
                 <li>
-                   
-                    <a href="#">Reformas</a>
-                    <a href="#">Quem somos</a>
-                    <a href="#">Contatos</a>
+                    <a href="#oque-fazemos">O que fazemos</a>
+                    <a href="#servicos">Serviços</a>
+                    <a href="#quemsomos">Quem somos</a>
                 </li>
             </ul>
         </nav>
@@ -49,9 +50,9 @@
                 </div>
             </div>
             <li id="list" style="display: none;">  
-                <a href="#">Reformas</a>
+                <a href="#">O que fazemos</a>
+                <a href="#">Serviços</a>
                 <a href="#">Quem somos</a>
-                <a href="#">Contatos</a>
             </li>
         </nav>
         <script src="/mobile.js"></script>
@@ -66,7 +67,7 @@
                     expertise técnica e criatividade, estamos aqui para realizar 
                     a reforma dos seus sonhos, garantindo qualidade e excelência 
                     em cada detalhe.</p>
-                <a class="btn top" href="">Chamar no WhatsApp</a>
+                <a class="btn top" href="https://wa.me/5521219915615">Chamar no WhatsApp</a>
             </article>
             <img src="/src/bg/pedreiro.png" alt="pedreiro">
             <div class="background"></div>
@@ -77,45 +78,64 @@
                 <h2>O que fazemos</h2>
                 <p>Descubra nossas transformações</p>
             </div>
-            <div class="area-oque-fazemos">
+            <div id="oque-fazemos" class="area-oque-fazemos">
                 <div class="caixa-oque-fazemos">
-                    <img src="/src/img/construcao.jpg" alt="">
-    
+                    <a href="#construcao">
+                        <img src="/src/img/construcao.jpg" alt="foto de pedreiro">
+                    </a>
                     <h2>Construção</h2>
                 </div>
                 <div class="caixa-oque-fazemos">
-                    <img src="/src/img/fundacao.jpg" alt="">
+                    <a href="#fundacao">
+                        <img src="/src/img/fundacao.jpg" alt=" foto de trator">
+                    </a>
                     <h2>Fundação</h2>
                 </div>
                 <div class="caixa-oque-fazemos">
-                    <img src="/src/img/eletrica.jpg" alt="">
+                    <a href="#eletrica">
+                        <img src="/src/img/eletrica.jpg" alt="foto de elétreica">
+                    </a>
                     <h2>Elétrica</h2>
                 </div>
                 <div class="caixa-oque-fazemos">
-                    <img src="/src/img/hidraulica.jpg" alt="">
+                    <a href="#hidraulica">
+                        <img src="/src/img/hidraulica.jpg" alt="foto de hidraulica">
+                    </a>
                     <h2>Hidráulica</h2>
                 </div>
                 <div class="caixa-oque-fazemos">
-                    <img src="/src/img/telhados.jpg" alt="">
+                    <a href="#piso-telhado">
+                        <img src="/src/img/telhados.jpg" alt="foto de telhado">
+                    </a>
                     <h2>Piso / Telhado</h2>
                 </div>
                 <div class="caixa-oque-fazemos">
-                    <img src="/src/img/acabamentos.jpg" alt="">
+                    <a href="#acabamentos">
+                        <img src="/src/img/acabamentos.jpg" alt="acabamentos">
+                    </a>
                     <h2>Acabamentos</h2>
                 </div>
                 <div class="caixa-oque-fazemos">
-                    <img src="/src/img/serralheria.jpg" alt="">
+                    <a href="#acabamentos">
+                        <img src="/src/img/Drywall.png" alt="acabamentos">
+                    </a>
+                    <h2>Drywall</h2>
+                </div>
+                <div class="caixa-oque-fazemos">
+                    <a href="#serralheria">
+                        <img src="/src/img/serralheria.jpg" alt="foto de serralherio">
+                    </a>
                     <h2>Serralharia em Geral</h2>
                 </div>
             </div>
-            <a style="margin-top:5%;" class="btn" href="">Chamar no WhatsApp</a>
+            <a style="margin-top:5%;" class="btn" href="https://wa.me/5521219915615">Chamar no WhatsApp</a>
         </section>
         <section class="servicos">
             
                 <div class="area-servicos">
                     <h2>Serviços</h2>
                 </div>
-                <article class="caixa-servicos">
+                <article id="construcao" class="caixa-servicos">
                 <div class="caixa-icon">
                     <img src="/src/icon/check-orange.png" alt="ícone de check">
                 </div>
@@ -129,7 +149,7 @@
                 </p>
             </article>
 
-            <article class="caixa-servicos">
+            <article id="fundacao" class="caixa-servicos">
                 <div class="caixa-icon">
                     <img src="/src/icon/check-orange.png" alt="ícone de check">
                 </div>
@@ -142,7 +162,7 @@
                 </p>
             </article>
 
-            <article class="caixa-servicos">
+            <article id="eletrica" class="caixa-servicos">
                 <div class="caixa-icon">
                     <img src="/src/icon/check-orange.png" alt="ícone de check">
                 </div>
@@ -156,7 +176,7 @@
                 </p>
             </article>
 
-            <article class="caixa-servicos">
+            <article id="hidraulica" class="caixa-servicos">
                 <div class="caixa-icon">
                     <img src="/src/icon/check-orange.png" alt="ícone de check">
                 </div>
@@ -169,7 +189,7 @@
                 </p>
             </article>
 
-            <article class="caixa-servicos">
+            <article id="acabamentos" class="caixa-servicos">
                 <div class="caixa-icon">
                     <img src="/src/icon/check-orange.png" alt="ícone de check">
                 </div>
@@ -182,7 +202,7 @@
                 </p>
             </article>
 
-            <article class="caixa-servicos">
+            <article id="serralheria" class="caixa-servicos">
                 <div class="caixa-icon">
                     <img src="/src/icon/check-orange.png" alt="ícone de check">
                 </div>
@@ -195,7 +215,7 @@
                 </p>
             </article>
 
-            <article class="caixa-servicos">
+            <article id="piso-telhado" class="caixa-servicos">
                 <div class="caixa-icon">
                     <img src="/src/icon/check-orange.png" alt="ícone de check">
                 </div>
@@ -208,7 +228,7 @@
                 </p>
             </article>
 
-            <article class="caixa-servicos">
+            <article id="drywall" class="caixa-servicos">
                 <div class="caixa-icon">
                     <img src="/src/icon/check-orange.png" alt="ícone de check">
                 </div>
@@ -231,7 +251,7 @@
                 transformar seu espaço com preço justo, muita qualidade e prazos 
                 curtos em nossos serviços.
             </p>
-            <a class="btn" href="">Chamar no WhatsApp</a>
+            <a class="btn" href="https://wa.me/5521219915615">Chamar no WhatsApp</a>
         </section>
         <section class="trabalhos" >
             <article class="caixa-trabalhos" >
@@ -243,16 +263,19 @@
                     já os seus trabalhos.</p>
             </article>
         </section>
-        <section class="trabalhos-pic">
-                <img  src="/src/img/muro.png" alt="">
-                <img  src="/src/img/parede.png" alt="">
-                <img src="/src/img/bancada.png" alt="">
+        <section id="servicos" class="trabalhos-pic">
+                <img  src="/src/img/muro.png" alt="trabalho feitos - muro">
+                <img class="bg" src="/src/img/foto1.png" alt="">
+                <img  src="/src/img/parede.png" alt="trabalho feitos - parede">
+                <img  class="bg" src="/src/img/foto2.png" alt="">
+                <img  src="/src/img/bancada.png" alt="trabalho feitos - bancada">
+                <img  class="bg" src="/src/img/foto3.png" alt="">
                 <article class="caixa2-trabalhos">
                     <h2>Contate-nos através do nosso WhatsApp</h2>
-                    <a style="margin-bottom:5%;" class="btn" href="">Chamar no WhatsApp</a>
+                    <a style="margin-bottom:5%;" class="btn" href="https://wa.me/5521219915615">Chamar no WhatsApp</a>
                 </article>
         </section>
-        <section class="quem-somos">
+        <section id="quemsomos" class="quem-somos">
             <h2>Quem Somos</h2>
             <p>
                 A CGA Construtora e Reforma LTDA é uma microempresa estabelecida 
@@ -280,20 +303,25 @@
     </main>
     <footer>
         <h3>
-            CGA Construtora - Todos os direitos reservados © - Desenvolvido por Franklin Leão da Agência Kinger
+            CGA Construtora - Todos os direitos reservados © - Desenvolvido por 
+            <a href="https://wa.me/5521979687388?text=Oi,%20pode%20me%20dar%20um%20or%C3%A7amento%20de%20site?">Franklin Leão</a> 
+            da <a href="https://wa.me/5521990693443?text=Oi%2CTe%20achei%20na%20Landpage%20da%20PotenciaAssessoria%2C%20poderia%20me%20tirar%20uma%20d%C3%BAvida%3F">Agência Kinger</a> 
         </h3>
         <div class="footer-abaixo" >
             <article class="footer-esrquerdo">
-                <p>CONTATOS :</p>
-                <P> (21) 99999-95965</P>
-                <P> (21) 99999-95965</P>
+                <p style="font-weight: 800;">CONTATOS:</p>
+                <P> (21) 99156-1507</P>
+                <P> (21) 99863-2430</P>
             </article>
             <article class="footer-direito">
-                <P>CNPJ</P>
+                <p style="font-weight: 800;">CNPJ</P>
                 <p>54.064.932/0001-00</p>
-                <P>ENDEREÇO:</P>
-                <p>R. Dr. Nilo Peçanha, 843 - Centro, São Gonçalo - RJ, 24450-080</p>
+                
             </article>
+        </div>
+        <div>
+            
+            <p>R. Dr. Nilo Peçanha, 843 - Centro, São Gonçalo - RJ, 24450-080</p>
         </div>
     </footer>
 </body>

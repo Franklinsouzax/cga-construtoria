@@ -8,6 +8,7 @@
     margin: 0;
     font-family: 'Roboto', sans-serif;
     background-color: white;
+    scroll-behavior: smooth; 
 
 }
 :root{
@@ -182,6 +183,12 @@
     width: 80%;
   
 }
+.area-servicos h2{
+    padding-top: 10vw;
+    text-align: center;
+    color: var(--cinza-padrao);
+    font-size: 6vw;
+}
 
             /*OQUE FAZEMOS*/   
 .oque-fazemos{
@@ -231,6 +238,11 @@
     overflow: hidden;
     background-size: cover;
     border-radius: 50%;
+    transition: all .2s ease-in;
+}
+
+.caixa-oque-fazemos img:hover{
+    opacity: 50%;
 }
 .caixa-oque-fazemos h2{
     font-size: 6vw;
@@ -313,17 +325,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     background-color: var(--cinza-padrao);
     padding-bottom: 10vh;
 
 }
+.bg{
+    display: none;
+}
+
 .trabalhos-pic img{
      
    width: 70%;
    height: 70vw;
    background-size: cover;
 }
+
 
 .caixa2-trabalhos{
    
@@ -407,12 +425,13 @@ footer h3 {
 }
 .footer-esrquerdo p{
     font-size: 3vw;
-    text-align:right;
+    text-align:left;
     padding-bottom: 3vw;
+    width: 100%;
 }
 .footer-direito{
     
-    width: 40vw;
+    width: 50vw;
     display: flex;
     align-items: end;
     justify-content: center;
@@ -423,9 +442,18 @@ footer h3 {
     font-size: 3vw;
     text-align:right;
     padding-bottom: 3vw;
+    width: 120%;
+}
+footer a{
+    text-decoration: none;
+    color: var(--cinza-padrao);
+    transition: all .5s ease-in-out;
+}
+footer a:hover{
+    color: #d4d8d8;
 }
 
-/* DESKTOP */
+                                            /* DESKTOP */
 
 @media (min-width: 768px){
     .nav-mobile{
@@ -620,13 +648,13 @@ footer h3 {
 }
 
 .contratacao h2{
-    
-    font-size: 3vw;
+    padding-left: 1vw;
+    font-size: 2.5vw;
     width: 40%;
 }
 .contratacao p{
   
-    font-size: 1.8vw;
+    font-size: 1.3vw;
     width: 40%;
     padding: 4%;
 
@@ -647,6 +675,12 @@ display: flex;
     justify-content: center;
     align-items: center;
 }
+.caixa-trabalhos h2{
+    font-size: 1vw;
+}
+.caixa-trabalhos p{
+    font-size: 1vw;
+}
 .trabalhos h2{
     padding:  6vw 1vw 0 1vw;
     font-size: 2vw;
@@ -662,7 +696,11 @@ display: flex;
     width: 30%;
     height: auto;
 }
-
+.bg{
+    display: flex;
+    opacity: 5%;
+    width: 120%;
+}
 .caixa2-trabalhos{
     width: 26%;
 }
@@ -687,34 +725,39 @@ display: flex;
 }
 footer{
     padding: 1%;
-
+    color: var(--cinza-padrao);
 }
+
 .footer-abaixo{
     padding: 0;
     height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 55%;
 }
 .footer-direito{
-width: 60%;
 
 display: flex;
 flex-direction: column;
 justify-content: start;
 padding: 1vw;
 padding-left: 5vw;
+
 }
 
 .footer-esrquerdo{
-width: 60%;
 display: flex;
 flex-direction: column;
 justify-content: flex-end;
- 
+padding-left: 0;
 padding: 1vw;
 }
 
 .footer-esrquerdo p{
     font-size: 1vw;
     padding: 1%;
+    padding-left: 0;
     line-height: 3vh;
     justify-content: start;
     display: flex;
@@ -722,6 +765,7 @@ padding: 1vw;
 }
 .footer-direito p{
     font-size: 1vw;
+    padding-right: 0;
     padding: 1%;
     line-height: 3vh;
     justify-content: end;
