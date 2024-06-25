@@ -1,4 +1,7 @@
-
+*{
+    padding: 0;
+    margin: 0;
+}
  html{
 
     padding: 0;
@@ -18,6 +21,7 @@
 .nav-desktop{
     display: none;
 }
+
 
 .area-burguer{
     display: flex;
@@ -42,10 +46,11 @@
     flex-direction: column;
     background-color: var(--cinza-padrao);
     width: 10vw;
-    height: 2vw;
-    margin: .1vw;
+    height: 1.5vw;
+    margin: .5vw;
 }
 .nav-mobile li{
+    padding: 3vh 0; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,6 +61,7 @@
     padding: 2%;
     color: var(--cinza-padrao);
     transition: all .5s ease;
+    font-size: 4vw;
 }
 .nav-mobile a:hover {
 
@@ -70,10 +76,18 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(/src//bg/fundo-topo.png);
+    background-color: var(--bg-padrao);
     background-size: cover;
-    background-position: top;
+    background-position: bottom;
     
+}
+.topo img{
+    width: 100%;
+}
+.background{
+    width: 100%;
+    height: 10%;
+    background-color:var(--bege-padrao);
 }
 .caixa-topo{
     display: flex; 
@@ -81,47 +95,48 @@
     align-items: center;
     flex-direction: column;
     padding-bottom: 10vh;
-    
+    padding: 2vh;
+    width: 80vw;
+    height: 100%;
 }
 .caixa-topo h2{
-color: var(--laranja-padrao);
-font-weight:bolder;
-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.637);
-width: 90%;
-font-size: 6vw;
-text-align: center;
-
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    height: auto;
+    width: auto;
+    padding: 2%;
+    text-align: center;
+    font-size: 6vw;
+    font-weight: 900;
+    word-spacing: 0.2em;
+    color: var(--laranja-padrao);
 
 }
 .caixa-topo p{
     color: var(--cinza-padrao);
-    width: 90%;
-    font-size: 3vw;
-    padding-bottom: 2vh;
+    padding: 4%;
+    font-size: 4vw;
+    padding-bottom: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 300;
 }
 
+
 .btn{
-    border: 1px solid #272B2C;
+    border: 2px solid #272B2C;
     border-radius: 2px;
-    padding: 2vw;
+    padding: 3vw;
     text-decoration: none;
     color: var(--cinza-padrao);
     text-transform: uppercase;
     font-size: 3vw;
     font-weight: 500;
     transition: all .2s ease-in-out;
-}
-.btn-top{
-    /* border: 1px solid #272B2C; */
-    border-radius: 2px;
-    padding: 2vw;
-    text-decoration: none;
-    color: transparent;
-    text-transform: uppercase;
-    font-size: 3vw;
-    font-weight: 500;
-    transition: all .2s ease-in-out;
-    margin-right: 50%;
 }
 
 .btn:hover{
@@ -161,10 +176,11 @@ text-align: center;
 }
 
 .caixa-servicos p{
-
+    padding-top: 3vw;
     font-size: 3vw;
     color: var(--cinza-padrao);
     width: 80%;
+  
 }
 
             /*OQUE FAZEMOS*/   
@@ -173,24 +189,25 @@ text-align: center;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(/src/img/construcao.jpg);
+    background-image: url(/src/img/BG4.jpg);
     background-size: auto;
     height: auto;
     padding-bottom: 10vh;
 }
 
 .oque-fazemos h2{
-    padding: 0;
+    padding: 5vh 0 ;
     color: white;
     text-align: center;
+    font-size: 8vw;
 
 }
 .oque-fazemos p{
    
-    padding: 0;
+    padding-bottom: 3vw;
     font-weight: 200;
     color: white;
-    font-size: 3vw;
+    font-size: 4vw;
 }
 .caixa-oque-fazemos{
     
@@ -204,18 +221,19 @@ text-align: center;
     margin: 2vw;
     background-color:white;
     border-color: transparent;
+    padding: 3vh;
 }
 
 .caixa-oque-fazemos img{
 
-    width: 50vw;
-    height: 50vw;
+    width: 45vw;
+    height: 45vw;
     overflow: hidden;
     background-size: cover;
-    border-radius: 120px;
+    border-radius: 50%;
 }
 .caixa-oque-fazemos h2{
-
+    font-size: 6vw;
     font-weight: 300;
     color: var(--cinza-padrao);
 }
@@ -235,12 +253,20 @@ text-align: center;
     color: var(--cinza-padrao);
     text-align: center;
     font-weight: 800;
+    font-size: 6vw;
+    background-color: var(--laranja-padrao);
+    width: 70vw;
+    text-align: left;
+    padding: 1vw 0 1vw 8vw ;
+    
 }
 .contratacao p {
     text-align: center;
     color: var(--cinza-padrao);
     font-weight: 400;
-    font-size: 3vw;
+    font-size: 4vw;
+    width: 70vw;
+    padding: 3vh;
     
 }
 
@@ -257,25 +283,33 @@ text-align: center;
 .caixa-trabalhos{
     background-color: var(--laranja-padrao);
     width: 70%;
-    padding-bottom: 10vh;
-    
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }   
 .caixa-trabalhos h2{
-    width: 90%;
-    color: var(--cinza-padrao);
+    width: 100%;
+    color: white;
     padding-left:5vw;
+    padding: 4vw;
     width: 80%;
     text-align: center;
+    font-size: 5vw;
+    font-weight: 900;
 }
 .caixa-trabalhos p {
-    color: white;
+    color: var(--cinza-padrao);
     width: 80%;
     padding-left:5vw;
-    font-size: 3vw;
+    font-size: 3.5vw;
     font-weight: 300;
+    padding: 3%;
 }
 
 .trabalhos-pic{
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -285,23 +319,29 @@ text-align: center;
 
 }
 .trabalhos-pic img{
+     
    width: 70%;
-   height: 50vh;
-   background-size: contain;
+   height: 70vw;
+   background-size: cover;
 }
 
 .caixa2-trabalhos{
+   
     background-color: white;
-    width: 70%;
+    width: 66%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 2vw;
 }
 .caixa2-trabalhos h2{
+    padding: 1vw;
     text-align: center;
-    font-size: 5vw;
-
+    font-size: 4vw;
+    padding-bottom: 5vw;
+    color: var(--cinza-padrao);
+    font-weight: 800;
 }
 
         /*QUEM-SOMOS*/
@@ -311,14 +351,16 @@ text-align: center;
     align-items: center;
     flex-direction: column;
     background-color: var(--cinza-padrao);
+
 } 
 .quem-somos h2{
-
-    color: var(--laranja-padrao);
+    padding: 2vh;
+    color: var(--cinza-padrao);
     font-size: 6vw;
     display: flex;
     text-align: left;
     width: 80%;
+    background-color: var(--laranja-padrao);
 }
 .quem-somos p{
     color: white;
@@ -326,7 +368,12 @@ text-align: center;
     display: flex;
     text-align: left;
     width: 80%;
+    padding-top: 4vw;
+    padding-bottom: 4vh;
+    font-weight: 300;
+    line-height:2;
 }
+
 
 footer{
 
@@ -335,6 +382,7 @@ footer{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding:6vw 0;
 }
 
 footer h3 {
@@ -350,89 +398,113 @@ footer h3 {
     
 }
 .footer-esrquerdo{
-    width: 30vw;
-
+    width: 40vw;
+    padding: 4vw; 
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer-esrquerdo p{
+    font-size: 3vw;
+    text-align:right;
+    padding-bottom: 3vw;
 }
 .footer-direito{
     
-    width: 30vw;
+    width: 40vw;
     display: flex;
     align-items: end;
     justify-content: center;
     flex-direction: column;
-
-    
-    
+    padding: 4vw;   
 }
 .footer-direito p{
     font-size: 3vw;
     text-align:right;
+    padding-bottom: 3vw;
 }
 
 /* DESKTOP */
 
 @media (min-width: 768px){
     .nav-mobile{
-
         display: none;
-        
     }
     
     .nav-desktop{
         display: flex;
     }
-    
+
+    .nav-desktop ul{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1vw;
+        list-style: none;
+    }
+    .nav-desktop a {
+        text-decoration: none;
+        color: var(--cinza-padrao);
+        padding: 0 2vw;
+        transition: all .5s ease-in-out;
+    }
+
+    .nav-desktop a:hover{
+        color: var(--laranja-padrao);
+    }
 
     
 .topo{
     display: flex;
-    justify-content: left;
-    align-items: first baseline ;
-    flex-direction: column;
-    background-image: url(/src//bg/fundo-topo.png);
-    background-size: cover;
-    background-position: center;
-    
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
 }
 .caixa-topo{
-  
-  width: 70%;
+    height: 100%;
+    width: 50%; 
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .caixa-topo h2{
-
-    text-align: left;
-    font-size: 5vw;
+    border-top:2px solid var(--laranja-padrao);
+    border-bottom:2px solid var(--laranja-padrao);
+    font-size: 4vw;
+    padding: 1vw 10%;
+    width: 100%;
     font-weight: 800;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.329);
+    letter-spacing:1.5px;
+   
+    
 }
 .caixa-topo p{
-    text-align: left;
-    font-size: 1.8vw;
-    font-weight: lighter;
+    font-size: 1.4vw;
+    padding:  5vw 1% ;
+    
+}
+.topo img{
+    display: flex;
+    justify-content:flex-end;
+    align-items: end;
+    width: 45%;
+    background-size: cover;
 }
 
 .btn{
-    border: 1px solid #272B2C;
+    border: 2px solid #272B2C;
     border-radius: 2px;
-    padding: 2vw;
+    padding: 1.3vw;
     text-decoration: none;
     color: var(--cinza-padrao);
     text-transform: uppercase;
-    font-size: 3vw;
+    font-size: 1vw;
     font-weight: 500;
     transition: all .2s ease-in-out;
-}
-.btn-top{
-    /* border: 1px solid #272B2C; */
-    border-radius: 2px;
-    padding: 2vw;
-    text-decoration: none;
-    color: transparent;
-    text-transform: uppercase;
-    font-size: 3vw;
-    font-weight: 500;
-    transition: all .2s ease-in-out;
-    margin-right: 50%;
 }
 
 .btn:hover{
@@ -441,241 +513,200 @@ footer h3 {
     color: white;
 
 }
-                /*SERVICOS*/
-.servicos{
-    background-color: var(--bg-padrao);
-    padding-bottom: 10vw;
-}
-
-.caixa-servicos{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.caixa-icon{
-    display: flex;
-    width: 80%;
-    
-}
-.caixa-icon img{
-    width: 15vw;
-}
-
-.caixa-servicos h2{
-    
-    font-size: 6vw;
-    color: var(--cinza-padrao);
-    width: 80%;
-    font-weight: 600;
-}
-
-.caixa-servicos p{
-
-    font-size: 3vw;
-    color: var(--cinza-padrao);
-    width: 80%;
-}
-
-            /*OQUE FAZEMOS*/   
 .oque-fazemos{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(/src/img/construcao.jpg);
-    background-size: auto;
-    height: auto;
-    padding-bottom: 10vh;
-}
+    background-size: cover;
+    background-position: top;
 
-.oque-fazemos h2{
-    padding: 0;
-    color: white;
-    text-align: center;
 
 }
-.oque-fazemos p{
-   
-    padding: 0;
-    font-weight: 200;
-    color: white;
+.area-oque-fazemos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.topo-oque-fazemos h2{
     font-size: 3vw;
+    padding-bottom: 0;
+}
+.topo-oque-fazemos p{
+    font-size: 2vw;
 }
 .caixa-oque-fazemos{
-    
-    width: 70vw;
-    height: 70vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border: 1px solid ;
-    margin: 2vw;
-    background-color:white;
-    border-color: transparent;
+
+    background-color: white;
+    width: 20vw;
+    height: 25vw;
+    margin: 1vw;
+    padding: 0.1vw;
 }
+.topo-oque-fazemos{
+    padding: 5vh;
+}
+.topo-oque-fazemos h2{
 
-.caixa-oque-fazemos img{
+    background-color: var(--laranja-padrao);
+    margin-top: 2vw;
+    padding: 1vw 5vw;
+    width: 70%;
+}
+.topo-oque-fazemos p{
 
-    width: 50vw;
-    height: 50vw;
-    overflow: hidden;
-    background-size: cover;
-    border-radius: 120px;
+    background-color: white;
+    color: var(--cinza-padrao);
+    padding: 1vw 5vw;
+    width: 70%;
+    font-size: 1.5vw;
+    font-weight: 400;
+
 }
 .caixa-oque-fazemos h2{
-
-    font-weight: 300;
-    color: var(--cinza-padrao);
+    font-size: 2vw;
+}
+.caixa-oque-fazemos img{
+    height: 15vw;
+    width: 15vw;
 }
 
-            /* CONTRATACAO*/
-.contratacao{
-
+         /*AREA SERVICOS*/
+ .servicos{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+ }        
+ .area-servicos{
     width: 100%;
-    padding-bottom: 10vh;
-}
-.contratacao h2{
-    width: 100%;
-    color: var(--cinza-padrao);
-    text-align: center;
-    font-weight: 800;
-}
-.contratacao p {
-    text-align: center;
-    color: var(--cinza-padrao);
-    font-weight: 400;
-    font-size: 3vw;
-    
-}
-
-            /*CAIXA TRABALHOS*/
-.trabalhos{
-    background-image: linear-gradient(to bottom, transparent, transparent 80%, #272B2C 50%, #272B2C);
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
    
+    
+ }    
+ .area-servicos h2 {
+    font-size: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+    width: 50%;
+    text-align: center;
+ }   
+.caixa-icon{
+    width: 5%;
+    padding-right:5vw ;
+    padding-left: 2vw;
+}
+.caixa-servicos{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.caixa-servicos h2{
+    font-size: 3vw;
+    width: 70%;
+}
+.caixa-servicos p{
+    padding: 1vw;
+    font-size: 1.1vw;
+}
+
+.contratacao h2{
+    
+    font-size: 3vw;
+    width: 40%;
+}
+.contratacao p{
+  
+    font-size: 1.8vw;
+    width: 40%;
+    padding: 4%;
+
+}
+
+                /*TRABALHOS*/
+.trabalhos{
+
+justify-content: center;
+align-items: center;
+display: flex;
 
 }
 .caixa-trabalhos{
-    background-color: var(--laranja-padrao);
-    width: 70%;
-    padding-bottom: 10vh;
-    
-}   
-.caixa-trabalhos h2{
-    width: 90%;
-    color: var(--cinza-padrao);
-    padding-left:5vw;
-    width: 80%;
-    text-align: center;
-}
-.caixa-trabalhos p {
-    color: white;
-    width: 80%;
-    padding-left:5vw;
-    font-size: 3vw;
-    font-weight: 300;
-}
-
-.trabalhos-pic{
+    width: 30%;
+    height: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    background-color: var(--cinza-padrao);
-    padding-bottom: 10vh;
+}
+.trabalhos h2{
+    padding:  6vw 1vw 0 1vw;
+    font-size: 2vw;
+}
 
+.trabalhos p{
+    padding-top: 1vw;
+    font-size: 1.5vw;
+    font-weight: 400;
+    width: 90%;   
 }
 .trabalhos-pic img{
-   width: 70%;
-   height: 50vh;
-   background-size: contain;
+    width: 30%;
+    height: auto;
 }
 
 .caixa2-trabalhos{
-    background-color: white;
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    width: 26%;
 }
 .caixa2-trabalhos h2{
-    text-align: center;
-    font-size: 5vw;
-
+    font-size: 1.8vw;
+    padding-bottom: 1.5vw;
 }
-
-        /*QUEM-SOMOS*/
+            /* QUEM SOMOS */
 .quem-somos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: var(--cinza-padrao);
-} 
+    
+    padding-bottom: 10vw;
+}
 .quem-somos h2{
-
-    color: var(--laranja-padrao);
-    font-size: 6vw;
-    display: flex;
-    text-align: left;
-    width: 80%;
+    margin-bottom: 3vw;
+    width: 90%;
+    font-size: 2vw;
 }
 .quem-somos p{
-    color: white;
-    font-size: 3vw;
-    display: flex;
-    text-align: left;
-    width: 80%;
-}
-
-footer{
-
-    background-color: var(--laranja-padrao);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-footer h3 {
-    text-align: center;
-    font-size: 3vw;
-    font-weight: 300;
     width: 90%;
+    font-size: 1.2vw;
+    padding: 1vw;
+}
+footer{
+    padding: 1%;
+
 }
 .footer-abaixo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+    padding: 0;
+   
+    height: auto;
 }
-.footer-esrquerdo{
-    width: 30vw;
-
-}
-.footer-direito{
+.footer-esrquerdo p{
+    font-size: 1vw;
     
-    width: 30vw;
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    flex-direction: column;
-
+    padding: 0;
 }
 .footer-direito p{
-    font-size: 3vw;
-    text-align:right;
-}
+    font-size: 1vw;
     
+    padding: 0;
+}
+footer h3{
+   
+    padding: 0;
+    font-size: 1.8vw;
+}
 }
